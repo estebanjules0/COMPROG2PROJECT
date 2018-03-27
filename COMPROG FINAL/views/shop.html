@@ -1,0 +1,45 @@
+<div class="bg" id="registrationPage">
+
+    <div id="quote">
+        <h1>Happy Shopping</h1>
+    </div> 
+
+    <div id='cssmenu'>
+    <ul>
+        <li class='active'><a href='#'>Home</a></li>
+        <li><a href='#!/cakeshop'>Cakes</a></li>
+        <li><a href='#!/cupcakeshop'>Cupcakes</a></li>
+        <li><a href='#!/pastryshop'>Pastries</a></li>
+        <li ng-if="!logged"><a href='#!/login'>Sign In</a></li>
+        <li ng-if="logged"><a href='#!/cart'>View Cart</a></li>
+        <li ng-if="logged"><a href='' ng-click="logout()">Sign Out</a></li>
+    </ul>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="two col-md-12">
+                <ul>
+                    <li>
+                        <img src="img/IMG_20151116_091147.jpg">
+                        <p class="cakes">Cakes
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/DSC_0071.jpg">
+                        <p class="cakes">CupCakes
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/IMG_0963.jpg">
+                        <p class="cakes">Pastries
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Sign out & Home -->
+
+</div>

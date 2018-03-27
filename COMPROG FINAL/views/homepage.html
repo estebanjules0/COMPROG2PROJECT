@@ -1,0 +1,28 @@
+<!-- HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME -->
+
+<div class="bg">
+	<div id="mySidenav" class="sidenav">
+		<a href="#" id="home1"><i class="fas fa-home"></i> Home</a>
+		<a href="#!/shop" id="shop1"><i class="fas fa-shopping-bag"></i> Shop</a>
+		<a href="#!/register" id="viewShop1" ng-if="!logged"><i class="fas fa-user-plus"></i> Register</a>
+		<a href="#!/login" id="register1" ng-if="!logged"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+		<a href="#!/account" id="viewShop1" ng-if="logged"><i class="fas fa-user-circle"></i> Account</a>
+		<a href="#!/cart" id="register1" ng-if="logged && cid == 1"><i class="fab fa-opencart"></i> View Cart</a>
+		<a href="#!/cart" id="register1" ng-if="logged && cid != 1"><i class="fab fa-opencart"></i> View Cart</a>
+		<a href="" id="signIn1" ng-click="logout()" ng-if="logged && cid == 1"><i class="fab fa-opencart"></i> LogOut</a>
+		<a href="" id="signIn1" ng-click="logout()" ng-if="logged && cid != 1"><i class="fab fa-opencart"></i> LogOut</a>
+	</div>
+
+
+	<div id="quote">
+		<h1>Homemade Cakes For All Occasions</h1>
+	</div>
+
+
+	<div id="footerFrontpage">
+        <p class="text-center">Copyright <i class="far fa-copyright"></i> PAROKYA ni JULES E-commerce 2018. All right reserved <i class="far fa-registered"></i></p>
+	</div>
+
+</div>
+
+<!-- HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME - HOME -->

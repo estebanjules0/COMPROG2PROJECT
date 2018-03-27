@@ -1,0 +1,156 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    position:   relative;
+    overflow: hidden;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../img/cartBack1.jpg");
+
+    /* Full height */
+    height: 100vh;
+    max-height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+#quote {
+    position: relative;
+    top: 15px;
+    background-color: white;
+    opacity: 0.5;
+}
+#quote h1{
+    text-align: right;
+    font-family: Times New Roman;
+    padding: 5px 10px 5px 5px;
+}
+ul li
+{
+    display: inline-block;
+}
+.option
+{
+    width: 100%;
+    text-align: right;
+    padding-right: 0;
+    margin-right: 0;
+    
+}
+ul
+{
+    padding-top: 10px;
+    padding-right: 0px;
+}
+li
+{
+    padding-left: 10px;
+
+}
+.main
+{
+    background: rgba(255, 255, 255, 0.4);
+    height: 400px;
+    width: 95%;
+    overflow: auto;
+    display: block;
+    padding-top: 40px;
+    overflow-y: auto;
+    text-align: center;
+
+}
+.main img
+{
+    height: 250px;
+    width: 300px;
+    padding-left: 40px;
+    padding-top: 40px;
+
+}
+.padd
+{
+    
+}
+
+label
+{
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+
+.sample
+{
+    text-align: left;
+
+}
+.text-holder .content-heading {
+    display: flex;
+    justify-content: start;
+    margin: 20px 50px;
+
+}
+.text-holder .content-heading .title {
+    padding: 10px 12px;
+    background: transparent ;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+     margin-left: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    color: black;
+
+}
+.text-holder .content-heading .title:hover {
+    color: white;
+    transition: 200ms ease-in-out;
+}
+.ivspade
+{
+    padding-top: 10px;
+    text-align: center;
+}
+.main table
+{
+    padding-left: 100px;
+
+    text-align: center;
+    display: block;
+}
+
+.main th
+{
+    padding-left: 125px;
+}
+.main td
+{
+   padding-left: 125px; 
+}
+.main button
+{
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    font-size: 12px;
+    color: #000000;
+
+}
+.toppo
+{
+    padding-bottom: 0px;
+}
+.ivspade h4
+{
+    text-align:right;
+    padding-right: 300px; 
+}

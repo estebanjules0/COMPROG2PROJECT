@@ -1,0 +1,112 @@
+/*FRONT PAGE - FRONT PAGE - FRONT PAGE - FRONT PAGE*/
+body, html {
+
+    margin: 0;
+    padding: 0;
+    position:   relative; 
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../img/back2.JPEG");
+
+
+    /* Full height */
+    height: 100vh;
+    max-height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+
+}
+/*     BACKGROUND  BACKGROUND BACKGROUND  BACKGROUND       */
+
+
+/*- SIDE NAVBAR - SIDE NAVBAR - SIDE NAVBAR - */
+#mySidenav a {
+    position: absolute;
+    left: -135px;
+    transition: 0.3s;
+    padding: 10px;
+    width: 160px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#home1 {
+    top: 130px;
+    background-color: white;
+    opacity: 0.3;
+}
+
+#shop1 {
+    top: 200px;
+    background-color: white;
+    opacity: 0.3;
+}
+#viewShop1 {
+    top: 270px;
+    background-color: white;
+    opacity: 0.3;
+}
+
+#register1 {
+    top: 340px;
+    background-color: white;
+    opacity: 0.3;
+}
+
+#signIn1 {
+    top: 410px;
+    background-color: white;
+    opacity: 0.3;
+}
+#account1 {
+    top: 480px;
+    background-color: white;
+    opacity: 0.3;
+}
+
+#admin1 {
+    top: 550px;
+    background-color: white;
+    opacity: 0.3;
+}
+/*- SIDE NAVBAR - SIDE NAVBAR - SIDE NAVBAR - */
+
+
+#quote {
+    position: relative;
+    top: 15px;
+    background-color: white;
+    opacity: 0.3;
+}
+#quote h1{
+    text-align: right;
+    font-family: Times New Roman;
+    padding: 5px 10px 5px 5px;
+}
+
+#footerFrontpage {
+    position: relative;
+    top: 480px;
+}
+
+#footerFrontpage p {
+    text-align: center;
+    font-size: 10px;
+    font-family: Times New Roman;
+    padding: 5px 10px 5px 5px;
+}
+/*FRONT PAGE - FRONT PAGE - FRONT PAGE - FRONT PAGE*/
+
+

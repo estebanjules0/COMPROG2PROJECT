@@ -1,0 +1,54 @@
+<div class="bg" id="registrationPage">
+
+    <div id="quote">
+        <h1>Pastries</h1>
+    </div>  
+
+    <div id='cssmenu'>
+    <ul>
+        <li class='active'><a href='#'>Home</a></li>
+        <li><a href="#!/shop">Shop</a></li>
+        <li><a href='#!/cakeshop'>Cakes</a></li>
+        <li><a href='#!/cupcakeshop'>Cupcakes</a></li>
+        <li ng-if="!logged"><a href='#!/login'>Sign In</a></li>
+        <li ng-if="logged"><a href='#!/cart'>View Cart</a></li>
+        <li ng-if="logged"><a href='' ng-click="logout()">Sign Out</a></li>
+    </ul>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="five col-md-12">]
+                <ul>
+                    <li>
+                         <img src="img/IMG_20160108_153555.jpg">
+                        <p class="cakes"> Pastry 1 <br>
+                            200 php
+                            <br>
+                            <button type="button" class="btn btn-outline-secondary" ng-click="addCart(6)">add to cart</button>
+                        </p>
+                    </li>
+                    <li>
+                         <img src="img/IMG_0963.jpg">
+                        <p class="cakes"> Pastry 2 <br>
+                            200 php
+                            <br>
+                            <button type="button" class="btn btn-outline-secondary" ng-click="addCart(7)">add to cart</button>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/mamon.jpg">
+                        <p class="cakes"> Pastry 3 <br>
+                            200 php
+                            <br>
+                            <button type="button" class="btn btn-outline-secondary" ng-click="addCart(8)">add to cart</button>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Sign out & Home -->
+
+</div>

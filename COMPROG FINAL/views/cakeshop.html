@@ -1,0 +1,72 @@
+<div class="bg" id="registrationPage">
+
+    <div id="quote">
+        <h1>Cakes</h1>
+    </div>  
+
+    <div id='cssmenu'>
+    <ul>
+        <li class='active'><a href='#'>Home</a></li>
+        <li><a href="#!/shop">Shop</a></li>
+        <li><a href='#!/cupcakeshop'>Cupcakes</a></li>
+        <li><a href='#!/pastryshop'>Pastries</a></li>
+        <li ng-if="!logged"><a href='#!/login'>Sign In</a></li>
+        <li ng-if="logged"><a href='#!/cart'>View Cart</a></li>
+        <li ng-if="logged"><a href='' ng-click="logout()">Sign Out</a></li>
+    </ul>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="three col-md-12">
+                <ul>
+                    <li>
+                         <img src="img/IMG_20151116_091147.jpg">
+                        <p class="cakes"> Seven Diameter Cake<br>
+                            300 php
+                            <br>
+                            <button type="button" class="btn btn-outline-secondary" ng-click="addCart(1)">add to cart</button>
+                        </p>
+                    </li>
+                    <li>
+                         <img src="img/20161006_115821.jpg">
+                        <p class="cakes"> Twelve Diameter Cake<br>
+                            500 php
+                            <br>
+                            <button type="button" class="btn btn-outline-secondary" ng-click="addCart(2)">add to cart</button>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/20160907_111406-3.jpg">
+                        <p class="cakes"> Fondant Cake <br>
+                            700 php
+                            <br>
+                            <button type="button" class="btn btn-outline-secondary" ng-click="addCart(3)">add to cart</button>
+                        </p>
+                          
+                    </li>
+                    <li>
+                        <img src="img/IMG_20151020_124516.jpg">
+                        <p class="cakes"> Two Layer Cake <br>
+                            1000 php
+                            <br>
+                            <button type="button" class="btn btn-outline-secondary" ng-click="addCart(4)">add to cart</button>
+                        </p> 
+                    </li>
+                    <li>
+                         <img src="img/IMG_1290.jpg">
+                        <p class="cakes"> Wedding Cake <br>
+                            1800 php
+                            <br>
+                            <button type="button" class="btn btn-outline-secondary" ng-click="addCart(5)">add to cart</button>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Sign out & Home -->
+
+</div>

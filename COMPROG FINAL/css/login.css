@@ -1,0 +1,131 @@
+/*FRONT PAGE - FRONT PAGE - FRONT PAGE - FRONT PAGE*/
+body, html {
+    margin: 0;
+    padding: 0;
+    position:   relative;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../img/signInBack1.jpg");
+
+    /* Full height */
+    height: 100vh;
+    max-height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    
+}
+/*     BACKGROUND  BACKGROUND BACKGROUND  BACKGROUND       */
+
+
+/*- SIDE NAVBAR - SIDE NAVBAR - SIDE NAVBAR - */
+.text-holder .content-heading {
+    display: flex;
+    justify-content: start;
+    margin: 35px 50px;
+
+}
+.text-holder .content-heading .title {
+    padding: 10px 12px;
+    background: transparent ;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+     margin-left: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    color: black;
+
+}
+.text-holder .content-heading .title:hover {
+    color: white;
+    transition: 200ms ease-in-out;
+}
+/*- SIDE NAVBAR - SIDE NAVBAR - SIDE NAVBAR - */
+
+
+
+
+#quote {
+	position: relative;
+	top: 15px;
+	background-color: white;
+	opacity: 0.5;
+}
+#quote h1{
+	text-align: right;
+	font-family: Times New Roman;
+	padding: 5px 10px 5px 5px;
+}
+
+#footerFrontpage {
+	position: relative;
+	top: 110px;
+}
+
+#footerFrontpage p {
+	text-align: center;
+	font-size: 10px;
+	font-family: Times New Roman;
+	padding: -1px 10px 5px 5px;
+}
+
+/*Sign In - Sign In - Sign In*/
+
+.form-signin {
+    padding: 10px;
+}
+.form-signin input[type="text"] {
+    margin-bottom: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.vertical-offset-100 {
+    padding-top: 100px;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+.panel {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+#createAccount1 {
+    text-align: center;
+}
+/*Sign In - Sign In - Sign In*/
+
+
+/*FRONT PAGE - FRONT PAGE - FRONT PAGE - FRONT PAGE*/
+

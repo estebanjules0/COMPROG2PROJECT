@@ -1,0 +1,55 @@
+<div id="paypal-button-container" ng-controller="cartController"></div>
+
+<script>
+        var sandboxLink = 'AQsRMF-Dh5oAWdmgPy_tGc6F-mHQYCVSV-2ZVCNmWcIhkznA2LPzdbLZGD0xI1rUrBC1VEdTqroEjwpg';
+        var delay = 250;
+        var price = 0;
+        setTimeout(function(){
+           price = angular.element(document.querySelector('[ng-controller="cartController"]')).scope().totalP;
+        }, delay);
+        paypal.Button.render({
+
+            env: 'sandbox', // sandbox | production
+
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+            client: {
+                sandbox: sandboxLink,
+                production: '<insert production client id>'
+            },
+
+            // Show the buyer a 'Pay Now' button in the checkout flow
+            commit: true,
+            // payment() is called when the button is clicked
+            payment: function(data, actions) {
+
+                // Make a call to the REST api to create the payment
+                return actions.payment.create({
+                    payment: {
+                        transactions: [
+                            {
+                                amount: { total: price, currency: 'PHP' }
+                            }
+                        ]
+                    }
+                });
+            },
+
+            // onAuthorize() is called when the buyer approves the payment
+            onAuthorize: function(data, actions) {
+
+                // Make a call to the REST api to execute the payment
+                return actions.payment.execute().then(function() {
+                    // value = angular.element(sel).scope().testFunc();
+                    window.alert('Payment Complete!');
+                    window.paymentId = data.paymentID;
+                    window.payerId = data.payerID;
+                    window.token = data.paymentToken
+                    // var vlwat = true;
+                    angular.element(document.getElementById('paypal-button-container')).scope().payment();
+                });
+            }
+
+        }, '#paypal-button-container');
+
+</script>

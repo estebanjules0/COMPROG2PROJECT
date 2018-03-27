@@ -1,0 +1,58 @@
+<div class="bg" id="registrationPage">
+
+    <div id="quote">
+        <h1>My Shopping Cart</h1>
+    </div>
+
+    <div class="text-holder home">
+            <div class="container">
+                <div class="row no-gutters ">
+                    <div class="content-heading col-md-12 text-left">
+                        <a href="#" class="title home">Home</a>
+                        <a href="#!/shop" class="title sign-out">Shop</a>
+                        <a href="" class="title sign-out" ng-click="logout()">Sign Out</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="container">
+        <div class="col-md-12 padd">
+            <div class="main">
+
+                
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        
+                    </tr>
+
+                    <tr ng-repeat="item in cartDisplay">
+                        <td>{{item.prod}}</td>
+                        <td>{{item.price}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>
+                            <button ng-click="removeItem(item)">Remove</button>
+
+                        </td>
+                    </tr>
+
+                </table>
+                    
+                
+                
+        
+
+             </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 ivspade">
+        <h4>Total: {{totalP}} PHP</h4>
+        <button ng-click="checkOut()">Checkout</button>
+        <button ng-click="removeAll()">Remove All</button>
+    </div>
+    
